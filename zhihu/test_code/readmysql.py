@@ -7,7 +7,7 @@ import MySQLdb
 
 def main(argv=None):
 
-    db = MySQLdb.connect("localhost", "root", "111111", "crawl", charset='utf8' )
+    db = MySQLdb.connect("localhost", "root", "your password", "crawl", charset='utf8' )
     cursor = db.cursor()
 
     selectsql="select questionid,answer_num from  zhihu_question limit 2;"
