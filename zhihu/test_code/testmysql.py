@@ -20,7 +20,7 @@ def main(argv=None):
     item['attention_uv']='12'
     item['read_pv']='13'
 
-    db = MySQLdb.connect("localhost", "root", "111111", "crawl", charset='utf8' )
+    db = MySQLdb.connect("localhost", "root", "your password", "crawl", charset='utf8' )
     cursor = db.cursor()
 
     insertsql="insert into zhihu_question (questionid,title,intro,answer_num,attention_uv,read_pv) values "
